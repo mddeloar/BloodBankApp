@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">BloodBank</string>
+    <string name="register_request">If you have not register yet, Please register first by click on the register button</string>
+    <string name="contact_us">Pabna University of Science and Technology\n\nEmail: deloar.pust@gmail.com\n\nMobile: 01765436702\n\n</string>
+    <string name="about_us">Vision: Right blood component for right patient at right time in right donor</string>
+
+    <string name="helloworld">Hello World</string>
+    <string name="helloworld1">Hello World1</string>
+    <string name="helloworld2">Hello World2</string>
+
+    <string-array name="BloodGroup">
+        <item>Blood Group</item>
+        <item>AB+</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB-</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="GridItemName">
+        <item>RecyclerView</item>
+        <item>ListView</item>
+        <item>Navigation</item>
+        <item>FullScreen </item>
+        <item>Donor Reg</item>
+        <item>Floating</item>
+        <item>AutoComplete</item>
+        <item>ImageUpload</item>
+        <item>SingleInfo</item>
+        <item>SingleInfo</item>
+
+    </string-array>
+
+    <string-array name="fGridItemName">
+        <item>Donor:</item>
+        <item>People:</item>
+    </string-array>
+
+
+    <string-array name="Gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <array name="Keep">
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+
+    <string-array name="CountryNames">
+        <item>Bangladesh</item>
+        <item>Afganisthan</item>
+        <item>Bangkok</item>
+        <item>India</item>
+        <item>Bhuatan</item>
+        <item>Maxico</item>
+        <item>America</item>
+        <item>Colombo</item>
+        <item>Australia</item>
+        <item>Sydnee</item>
+        <item>Malaisia</item>
+        <item>Abu Dubai</item>
+        <item>Arab</item>
+        <item>Pakistan</item>
+        <item>Mayanmar</item>
+        <item>Rasia</item>
+        <item>China</item>
+        <item>Afriaca</item>
+        <item>Indonesia</item>
+        <item>England</item>
+
+    </string-array>
+
+    <string name="ABP">AB+</string>
+    <string name="ABN">AB-</string>
+    <string name="AP">A+</string>
+    <string name="BP">B+</string>
+    <string name="AN">A-</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bottom_navigation_bar">BottomNavigationBarActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_basic">BasicActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

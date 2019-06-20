@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="5dp"
+    tools:context="com.example.mddeloarhossain.bloodbank.LogInActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/buttonstyle4"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+           <android.support.v7.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               app:cardCornerRadius="120dp"
+
+               >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="10dp"
+
+                   >
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@mipmap/ic_launcher_round"
+                       android:layout_gravity="center"
+                       android:padding="5dp"
+                       android:layout_margin="10dp"/>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:padding="7dp"
+                           android:src="@drawable/ic_email" />
+
+                       <EditText
+                           android:id="@+id/usernameLogInId"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="Username"
+                           android:textSize="17sp"
+                           android:textStyle="bold|italic"
+
+
+                           />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="5dp"
+                       android:layout_marginRight="5dp"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:padding="5dp"
+                           android:src="@drawable/ic_key1" />
+
+                       <EditText
+                           android:id="@+id/passwordLogInId"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="Password"
+                           android:inputType="textPassword"
+                           android:textSize="17sp"
+                           android:textStyle="bold|italic"
+
+
+                           />
+                   </LinearLayout>
+
+                   <Button
+                       android:id="@+id/logInId"
+                       android:textColor="#080808"
+                       android:background="@drawable/buttonstyle3"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Login"
+                       android:layout_margin="10dp"/>
+
+
+
+               </LinearLayout>
+
+
+           </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/registrationId"
+                android:textColor="#fff"
+                android:background="@drawable/buttonstyle7"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration"
+                android:layout_margin="10dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

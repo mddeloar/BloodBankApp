@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.mddeloarhossain.bloodbank.FullScreenActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:text="Hello I'm Full Screan Activity ( No Title Bar, No Action bar )"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/TextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="OFF"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+
+        />
+
+    <Switch
+        android:id="@+id/SwitchId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+
+        <Button
+            android:id="@+id/SingleProfileId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Single Profile"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/SingleProfile2Id"
+            android:background="@drawable/buttonstyle5"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single Profile 2"
+            android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/CircleMenuId"
+        android:textColor="#fff"
+        android:background="@drawable/buttonstyle2"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CIrcle Menu"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/LogInId"
+        android:textColor="#180101"
+        android:background="@drawable/buttonstyle3"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/gridViewId"
+        android:textColor="#fff"
+        android:background="@drawable/buttonstyle4"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grid View"
+        android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/registrationId"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

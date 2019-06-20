@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.example.mddeloarhossain.bloodbank.ImageUploadWithDetailsActivity">
+
+    <Button
+        android:id="@+id/ChooseImageButton"
+        android:layout_weight="0.25"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image"
+        />
+
+    <EditText
+        android:id="@+id/imageNameEditTextId"
+        android:layout_weight="0.25"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a name of the image"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/NameEditTextId"
+        android:layout_weight="0.25"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a name of the image"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/DistrictEditTextId"
+        android:layout_weight="0.25"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a name of the image"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewId"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbarId"
+        android:layout_weight="0.16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+
+        />
+
+    <Button
+        android:id="@+id/saveImageButton"
+        android:layout_weight="0.17"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Image"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/displayImageButton"
+        android:layout_weight="0.17"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display Image"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

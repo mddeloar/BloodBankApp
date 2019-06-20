@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#0a0909"
+    android:padding="10dp"
+    >
+
+    <TextView
+    android:id="@+id/donorListNameItemTextViewId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Hello this is a sample text."
+    android:padding="3dp"
+    android:textSize="17sp"
+    android:textColor="#FFFFFF"
+    />
+
+    <TextView
+        android:id="@+id/donorListCityItemTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello this is a sample text."
+        android:padding="3dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/donorListLocationItemTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello this is a sample text."
+        android:padding="3dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        />
+    <TextView
+        android:id="@+id/donorListContactItemTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello this is a sample text."
+        android:padding="3dp"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        />
+</LinearLayout>
