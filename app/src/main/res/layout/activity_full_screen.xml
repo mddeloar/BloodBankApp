@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +8,10 @@
     android:orientation="vertical"
     android:padding="10dp"
     tools:context="com.example.mddeloarhossain.bloodbank.FullScreenActivity">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,7 +108,52 @@
             android:layout_height="wrap_content"
             android:text="Registration"
             android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/progressDialogId"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progres Dialog"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/login2Id"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LogIn 2"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/MenuSubItemId"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menu Sub Item"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/SlideAnimationId"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slide Animation"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/CustomForntId"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle4"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Fonts"
+            android:layout_margin="5dp"/>
     </LinearLayout>
-
-
 </LinearLayout>
+
+</ScrollView>

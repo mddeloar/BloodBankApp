@@ -15,7 +15,7 @@ public class FullScreenActivity extends AppCompatActivity {
 
     Switch aSwitch;
     TextView textView;
-    private Button b1, b2, b3, b4, b5, b6;
+    private Button b1, b2, b3, b4, b5, b6, b7, b8,b9, b10, b11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,11 @@ public class FullScreenActivity extends AppCompatActivity {
         b4 = findViewById(R.id.LogInId);
         b5 = findViewById(R.id.gridViewId);
         b6 = findViewById(R.id.registrationId);
+        b7 = findViewById(R.id.progressDialogId);
+        b8 = findViewById(R.id.login2Id);
+        b9 = findViewById(R.id.MenuSubItemId);
+        b10 = findViewById(R.id.SlideAnimationId);
+        b11 = findViewById(R.id.CustomForntId);
 
         aSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -98,7 +103,47 @@ public class FullScreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        b7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = (new Intent(getApplicationContext(), ProgressDialogActivity.class));
+                //Toast.makeText(getApplicationContext(), "Welcome to your profile", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
+        b8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = (new Intent(getApplicationContext(), LogIn2Activity.class));
+                //Toast.makeText(getApplicationContext(), "Welcome to your profile", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
+        b9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = (new Intent(getApplicationContext(), MenuSubItemActivity.class));
+                //Toast.makeText(getApplicationContext(), "Welcome to your profile", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
 
+        b10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = (new Intent(getApplicationContext(), SlideAnimationActivity.class));
+                //Toast.makeText(getApplicationContext(), "Welcome to your profile", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
+        b11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = (new Intent(getApplicationContext(), CustomFontsActivity.class));
+                //Toast.makeText(getApplicationContext(), "Welcome to your profile", Toast.LENGTH_SHORT).show();
+                startActivity(intent);
+            }
+        });
 
     }
 }

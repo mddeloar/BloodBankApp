@@ -1,5 +1,6 @@
 package com.example.mddeloarhossain.bloodbank;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -34,11 +35,19 @@ public class BloodDonorsActivity extends AppCompatActivity {
     DatabaseReference databaseReference;
     //private ProgressBar progressBar;
     private FirebaseStorage firebaseStorage;
+    ProgressDialog progressDialog;
+
+    public static final String DONOR_ID = "com.example.mddeloarhossain.bloodbankm.donorid";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blood_donors);
+
+        progressDialog = new ProgressDialog(BloodDonorsActivity.this);
+        progressDialog.setTitle("Hello World!");
+        progressDialog.setMessage("Please wait...");
+        progressDialog.show();
 
         recyclerView = findViewById(R.id.recyclerImageViewId);
         //progressBar = findViewById(R.id.RecyclerprogressbarId);
@@ -65,6 +74,7 @@ public class BloodDonorsActivity extends AppCompatActivity {
                 }
                 imageAdapter = new AdapterRegistrationForShow(BloodDonorsActivity.this, uploadList);
                 recyclerView.setAdapter(imageAdapter);
+                progressDialog.dismiss();
 
                 imageAdapter.setOnItemClickListener(new AdapterRegistrationForShow.OnItemClickListener() {
                     @Override
@@ -72,6 +82,9 @@ public class BloodDonorsActivity extends AppCompatActivity {
                         String text = uploadList.get(position).getImageName();
                         Toast.makeText(getApplicationContext(),text+" is selected : "+position,Toast.LENGTH_SHORT).show();
                         Intent intent = (new Intent(getApplicationContext(), ProfileActivity.class));
+                        AdapterRegistration selectedItem = uploadList.get(position);
+                        final String key = selectedItem.getKey();
+                        intent.putExtra(DONOR_ID, key);
                         Toast.makeText(getApplicationContext(), "Welcome to your profile", Toast.LENGTH_SHORT).show();
                         startActivity(intent);
 
